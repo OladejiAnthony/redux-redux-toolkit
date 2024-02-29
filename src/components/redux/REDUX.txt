@@ -1,0 +1,17 @@
+REDUX INSTRUCTIONS(React Redux)
+-- Install redux - npm install redux react-redux
+1. Create a Store - where all your data would be stored
+2. Create a reducer function and pass it as an argument to the store
+3. Provide your store to your App.js component inside the index.js file
+4. Use/Access the store data from any component using useSelector() hook
+5. Dispatch action from the respective component
+using useDispatch() hook
+
+#NOTE - In this project we are going to learn how to Extract our "Reducers" into separate files and likewise, Extract the "Actions" into anotheer separate file too, in order to make our codes optimised especially when we are working in a large project.
+
+
+#Folder Structure -
+1. store Folder - reducers folder, actions folder, & store.js file
+2. reducers Folder- countReducer.js, authReducer.js files
+3. actions Folder - actions.js file
+

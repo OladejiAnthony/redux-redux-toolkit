@@ -1,0 +1,13 @@
+REDUX TOOLKIT INSTRUCTIONS
+
+-Installation: npm install @reduxjs/toolkit
+
+
+#Folder Structure -
+1. Store file - store.js (createStore API replaced with configureStore API)
+2. Slice File - reducer function and corresponding actions merged together
+    e.g authSlice.js and countSlice.js
+3. 
+
+
+

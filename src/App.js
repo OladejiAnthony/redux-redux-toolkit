@@ -1,15 +1,19 @@
-import React,{useState} from "react"
+import React from "react"
 import "./App.scss";
-import Counter from "./components/redux/counter/Counter";
+//import Counter from "./components/redux/counter/Counter";
+import CounterRTK from "./components/redux-toolkit/counter/CounterRTK";
+
 
 
 function App() {
 
   return (
     <div>
-      <Counter />
+      {/* <Counter /> */}
+      <CounterRTK /> 
     </div>
   );
 }
 
 export default App;
+

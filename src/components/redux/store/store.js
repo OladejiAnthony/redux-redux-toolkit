@@ -1,22 +1,18 @@
-import {createStore} from "redux"
+import {createStore, combineReducers} from "redux"
+import { countReducer } from "./reducers/countReducer";
+import { authReducer } from "./reducers/authReducer";
 
-//Reducer function
-const countReducer = (state = 0, action) => {
-    if(action.type === "SUBTRACT") {
-        return state - 1
-    }
-    if(action.type === "ADD") {
-        return state + 1
-    }
-    if(action.type === "RESET") {
-        return state = 0
-    }
-    return state;
-}
 
-//creat store
+//combine reducers here
+const reducers = combineReducers({
+    count: countReducer,
+    isLoggedIn: authReducer,
+})
+
+//create store
 const store = createStore(
-    countReducer,
+    //countReducer,
+    reducers,
     window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
 
